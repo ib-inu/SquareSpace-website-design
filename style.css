@@ -5,7 +5,9 @@
          url('fonts/Clarkson-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;}
-
+body{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
@@ -18,7 +20,6 @@
 .hero img{
     width: 100%;
     display: block;
-    max-width: 100%; 
 }
 
 nav , ul {
@@ -40,14 +41,15 @@ ul{
 }
 
 nav {
-    position:absolute;
+    position:fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     display: flex;
     align-items: center;
     background-color: #000;
     color: white;
+    z-index: 1;
 }
 
 nav .nav-img{
@@ -73,6 +75,9 @@ nav .nav-login{
     left: 180px;
 }
 /*STYLING HERO*/
+.hero{
+    display: inline-block;
+}
 .hero .hero-page{
  text-decoration: none;  
 }
@@ -109,4 +114,164 @@ nav .nav-login{
     top: 450px ;
     left: 320px;
     font-size: 20px;
+}
+
+ 
+/* Post-Hero */
+
+.post-hero{
+    background-color: #EDEDED;
+    display: flex;
+    
+}
+.post-hero h1{
+   margin: 50px 80px; 
+   width: 300px;
+ 
+}
+.post-hero button{
+    border: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 60px;
+    width: 180px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: black;
+    transition: 0.5s ease;
+    color: white;
+    position: absolute;
+    left :470px;
+    top: 0;
+}
+.post-hero .post-hero-search{
+    position: absolute;
+    left: 800px;
+    margin-top: 70px;
+    
+}
+.post-hero .post-hero-search input{
+    border: none;
+    width: 400px;
+    height: 50px;
+    margin-top: 7px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.post-hero-search-bar i {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.post-hero-search-bar{
+    background-color: white;
+    height: 60px;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.post-hero .post-hero-search input:active{
+    outline: none;
+    
+}
+.post-hero a{
+    color: black;
+   position: relative;
+    top: 30px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+/* section-3 */
+.section-3 {
+display: flex;
+width: 100%;
+    height: 700px;
+ background-color: #E8E4E4;
+}
+.section-3-text{
+    width: 550px;
+    margin-left: 150px;
+    margin-top: 100px;
+
+}
+.section-3-img{
+    margin-top: 100px;
+}
+/*SECTION 4*/
+.section-4{
+ padding-bottom: 100px;
+}
+.section-4-text-1{
+    display:inline-block
+
+}
+.section-4-text-1 p {
+    margin-left: 700px;
+    font-size: 20px;
+    color: grey;
+    width: 700px;
+    position: relative;
+    top: -125px;
+
+}
+.section-4-text-1 h1{
+    display: inline-block;
+    margin-top: 100px;
+    font-size: 50px;
+    width: 600px;
+    margin-left: 100px;
+}
+.section-4-text-1 button{
+   background-color: white;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 60px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s ;
+    border: none;
+   top: 400px;
+   top: 100px;
+   left: -500px;
+   padding-left: 10px;
+   padding-right: 10px;
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   position: relative;
+   top: -100px;
+   left: 700px;
+
+}
+.section-4-text-1 button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}
+.section-4-text-2{
+    display: flex;
+ 
+}
+.section-4-text-2 ul{
+ display: block;
+ position: relative;
+ left:-100px ;
+ 
+}
+.section-4-text-2 ul li{
+    font-size: 40px;
+    font-weight: 2;
+    font-family:   sans-serif;
+}
+.section-4-text-2 ul li:hover{
+    text-decoration: underline;
+}
+.section-4-text-2 img{
+  margin-left: 100px;
+}
+
+/* SECTION 5*/
+.section-5{
+    background-color: #2E2827;
+    color: #fff;
 }
