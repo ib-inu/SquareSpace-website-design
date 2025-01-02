@@ -16,7 +16,7 @@ This project is a static clone of the Squarespace website, built during my early
 - **HTML**: For structuring the content.
 - **CSS**: For styling and layout.
 
-## Main gooals
+## Main goals
 
 - Understanding the basics of HTML and CSS.
 - Developing an eye for design and layout replication.
